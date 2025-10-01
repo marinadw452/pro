@@ -1,0 +1,13 @@
+# استخدم صورة PostgreSQL الرسمية
+FROM postgres:17
+
+# إعداد المتغيرات الافتراضية للـ PostgreSQL
+ENV POSTGRES_USER=postgres
+ENV POSTGRES_PASSWORD=yourpassword
+ENV POSTGRES_DB=handmadestore
+
+# نسخ أي سكريبت SQL عند التشغيل (اختياري)
+# COPY init.sql /docker-entrypoint-initdb.d/
+
+# المنفذ اللي PostgreSQL يستمع عليه
+EXPOSE 5432
