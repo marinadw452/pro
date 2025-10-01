@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  justify-content: space-between; /* اللوقو يسار والقائمة يمين */
+  align-items: center; /* يخليهم بنفس المستوى عمودياً */
+  padding: 10px 20px;
+  background: #f9f9f9; /* خلفية خفيفة للهيدر */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;  /* مسافة بين الروابط */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
